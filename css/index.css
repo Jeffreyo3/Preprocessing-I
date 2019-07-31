@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,4 +140,182 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10px;
+  background-color: #EEF3F9;
+}
+.box {
+  display: inline-block;
+  width: 42.5%;
+  margin: 2%;
+  background-color: #1C112F;
+  color: #D5A33F;
+}
+@media (max-width: 800px) {
+  .box {
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .box {
+    width: 90%;
+    padding: 2%;
+    justify-content: center;
+  }
+}
+.container {
+  width: 93vw;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+.container nav {
+  font-size: 1.3rem;
+  display: flex;
+  width: 50vw;
+  margin: 2rem auto;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .container nav {
+    width: 80vw;
+    margin: 1rem auto;
+    position: relative;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .container nav {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1% auto;
+  }
+}
+.container nav a {
+  text-decoration: none;
+  color: #6639B5;
+}
+@media (max-width: 500px) {
+  .container nav a {
+    display: flex;
+    margin: 1% auto;
+    width: 100%;
+    justify-content: center;
+    color: #D5A33F;
+    background-color: #4071A8;
+    border: 1px solid #D5A33F;
+    padding: 2% 4%;
+  }
+}
+.container header {
+  height: 40vh;
+  width: 92.5vw;
+  padding: 10% 5%;
+  margin: 0 auto 2% auto;
+  border: 1px solid #6639B5;
+  background-color: #D5A33F;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .container header {
+    height: 25vh;
+    width: 80vw;
+    padding: 10% 5%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .container header {
+    width: 90%;
+    padding: 2%;
+    justify-content: center;
+  }
+}
+.container header h1 {
+  font-size: 3.3rem;
+}
+@media (max-width: 800px) {
+  .container header h1 {
+    font-size: 2rem;
+  }
+}
+.container header h4 {
+  font-size: 1.4rem;
+}
+@media (max-width: 800px) {
+  .container header h4 {
+    font-size: 1.2rem;
+  }
+}
+.container .main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .main .summary {
+  display: inline-block;
+  width: 42.5%;
+  margin: 2%;
+  background-color: #1C112F;
+  color: #D5A33F;
+}
+@media (max-width: 800px) {
+  .container .main .summary {
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .container .main .summary {
+    width: 90%;
+    padding: 2%;
+    justify-content: center;
+  }
+}
+.container .main .experience {
+  display: inline-block;
+  width: 42.5%;
+  margin: 2%;
+  background-color: #1C112F;
+  color: #D5A33F;
+}
+@media (max-width: 800px) {
+  .container .main .experience {
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .container .main .experience {
+    width: 90%;
+    padding: 2%;
+    justify-content: center;
+  }
+}
+.container .main .education {
+  display: inline-block;
+  width: 42.5%;
+  margin: 2%;
+  background-color: #1C112F;
+  color: #D5A33F;
+}
+@media (max-width: 800px) {
+  .container .main .education {
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .container .main .education {
+    width: 90%;
+    padding: 2%;
+    justify-content: center;
+  }
 }
