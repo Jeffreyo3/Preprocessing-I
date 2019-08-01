@@ -66,13 +66,29 @@ html, body {
 @theme-color-2: #D5A33F;
 @theme-color-3: #6639B5;
 @theme-color-4: #1C112F;
+@backgroundGradient: linear-gradient(to bottom, #6639B5, #6639B5, #4071A8, #EEF3F9, #EEF3F9);
+
+.h2Text {
+	font-size: 3.3rem;
+
+	@media (max-width: 800px) {
+		font-size: 2rem;
+	}
+}
+
+.h3Text {
+
+}
 
 .box {
 	display: inline-block;
-	width: 42.5%;
-	margin: 2%;
-	background-color: @theme-color-4;
+	width: 47.5%;
+	margin: 1% auto;
+	background-color: @theme-color-3;
 	color: @theme-color-2;
+	border-radius: 5px;
+	border: 1px solid @theme-color-4;
+	padding: 2rem;
 
 	@media (max-width: 800px) {
 		width: 80vw;
@@ -93,6 +109,9 @@ html, body {
 	border: 2px solid red;
 
 	nav {
+		background-color: @theme-color-2;
+		border-radius: 5px;
+		padding: 2%;
 		font-size: 1.3rem;
 		display: flex;
 		width: 50vw;
@@ -106,6 +125,8 @@ html, body {
 		
 	
 			@media (max-width: 500px) {
+				background-color: @backgroundMain;
+				padding: 0;
 				width: 90%;
 				flex-direction: column;
 				justify-content: center;
@@ -125,8 +146,9 @@ html, body {
 				width: 100%;
 				justify-content: center;
 				color: @theme-color-2;
-				background-color: @theme-color-1;
-				border: 1px solid @theme-color-2;
+				background-color: @theme-color-3;
+				border: 1px solid @theme-color-4;
+				border-radius: 5px;
 				padding: 2% 4%;
 			}
 		}
@@ -135,27 +157,28 @@ html, body {
 
 	header {
 		height: 40vh;
-		width: 92.5vw;
-		padding: 10% 5%;
-		margin: 0 auto 2% auto;
+		width: 90vw;
+		padding: 5% 5% 10% 10%;
+		margin: 0 auto;
 		border: 1px solid @theme-color-3;
-		background-color: @theme-color-2;
+		background-image: @backgroundGradient;
 		display: flex;
 		flex-direction: column;
+		border-radius: 5px;
+		border-color: @backgroundMain;
 		
 		
 
 		@media (max-width: 800px) {
 			height: 25vh;
 			width: 80vw;
-			padding: 10% 5%;
-			margin: 0 auto;
+			padding: 5% 5% 10% 5%;
 			justify-content: center;
+			align-items: center;
 
 			@media (max-width: 500px) {
 				width: 90%;
 				padding: 2%;
-				justify-content: center;
 			}
 		}
 
@@ -181,8 +204,25 @@ html, body {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 1% auto;
+
+		h2 {
+			.h2Text();
+		}
 
 		.summary {
+			.box();
+			min-width: 90vw;
+			@media (max-width: 800px){
+				min-width: 80vw;
+				@media (max-width: 500px){
+					min-width: 90%;
+				}
+			}
+		}
+
+		.skills {
 			.box();
 		}
 		
@@ -193,8 +233,43 @@ html, body {
 
 		.education {
 			.box();
+			min-width: 90vw;
+			@media (max-width: 800px){
+				min-width: 80vw;
+				@media (max-width: 500px){
+					min-width: 90%;
+				}
+			}
 		}
 
+	}
+
+	.contact {
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+
+		background-color: @theme-color-2;
+		border-radius: 5px;
+		padding: 2%;
+		font-size: 1.3rem;
+		width: 50vw;
+		margin: 2rem auto;
+
+		h2 {
+			.h2Text();
+		}
+		
+		a{
+			text-decoration: none;
+			font-size: 1.4rem;
+			color: @theme-color-3;
+
+			@media (max-width: 800px) {
+				font-size: 1.2rem;
+			}
+		}
 	}
 
 }
