@@ -144,13 +144,45 @@ body {
   font-size: 10px;
   background-color: #EEF3F9;
 }
+.basicText {
+  font-size: 1.4rem;
+}
 .h2Text {
+  display: inline-block;
+  font-size: 2.3rem;
+  color: #1C112F;
+  background-color: #1C112F;
+  color: #4071A8;
+  padding: 0.5% 1%;
+  margin: 1% auto;
+  border-radius: 5px;
+  width: auto;
   font-size: 3.3rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .h2Text {
     font-size: 2rem;
   }
+}
+.h3Text {
+  display: inline-block;
+  font-size: 2.3rem;
+  color: #D5A33F;
+  background-color: #1C112F;
+  padding: 0.5% 1%;
+  border-radius: 5px;
+  width: auto;
+}
+@media (max-width: 790px) {
+  .h3Text {
+    font-size: 1.8rem;
+  }
+}
+.ulbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1%;
 }
 .box {
   display: inline-block;
@@ -162,14 +194,14 @@ body {
   border: 1px solid #1C112F;
   padding: 2rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .box {
     width: 80vw;
     margin: 0 auto;
     justify-content: center;
   }
 }
-@media (max-width: 800px) and (max-width: 500px) {
+@media (max-width: 790px) and (max-width: 515px) {
   .box {
     width: 90%;
     padding: 2%;
@@ -179,7 +211,6 @@ body {
 .container {
   width: 93vw;
   margin: 0 auto;
-  border: 2px solid red;
 }
 .container nav {
   background-color: #D5A33F;
@@ -191,14 +222,14 @@ body {
   margin: 2rem auto;
   justify-content: space-between;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container nav {
     width: 80vw;
     margin: 1rem auto;
     position: relative;
   }
 }
-@media (max-width: 800px) and (max-width: 500px) {
+@media (max-width: 790px) and (max-width: 515px) {
   .container nav {
     background-color: #EEF3F9;
     padding: 0;
@@ -213,7 +244,7 @@ body {
   text-decoration: none;
   color: #6639B5;
 }
-@media (max-width: 500px) {
+@media (max-width: 515px) {
   .container nav a {
     display: flex;
     margin: 1% auto;
@@ -227,9 +258,9 @@ body {
   }
 }
 .container header {
-  height: 40vh;
+  height: 30vh;
   width: 90vw;
-  padding: 5% 5% 10% 10%;
+  padding: 5% 5% 15% 10%;
   margin: 0 auto;
   border: 1px solid #6639B5;
   background-image: linear-gradient(to bottom, #6639B5, #6639B5, #4071A8, #EEF3F9, #EEF3F9);
@@ -238,7 +269,7 @@ body {
   border-radius: 5px;
   border-color: #EEF3F9;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container header {
     height: 25vh;
     width: 80vw;
@@ -247,7 +278,7 @@ body {
     align-items: center;
   }
 }
-@media (max-width: 800px) and (max-width: 500px) {
+@media (max-width: 790px) and (max-width: 515px) {
   .container header {
     width: 90%;
     padding: 2%;
@@ -256,7 +287,7 @@ body {
 .container header h1 {
   font-size: 3.3rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container header h1 {
     font-size: 2rem;
   }
@@ -264,7 +295,7 @@ body {
 .container header h4 {
   font-size: 1.4rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container header h4 {
     font-size: 1.2rem;
   }
@@ -275,13 +306,37 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1% auto;
+  font-size: 1.4rem;
 }
 .container .main h2 {
+  display: inline-block;
+  font-size: 2.3rem;
+  color: #1C112F;
+  background-color: #1C112F;
+  color: #4071A8;
+  padding: 0.5% 1%;
+  margin: 1% auto;
+  border-radius: 5px;
+  width: auto;
   font-size: 3.3rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container .main h2 {
     font-size: 2rem;
+  }
+}
+.container .main h3 {
+  display: inline-block;
+  font-size: 2.3rem;
+  color: #D5A33F;
+  background-color: #1C112F;
+  padding: 0.5% 1%;
+  border-radius: 5px;
+  width: auto;
+}
+@media (max-width: 790px) {
+  .container .main h3 {
+    font-size: 1.8rem;
   }
 }
 .container .main .summary {
@@ -295,26 +350,26 @@ body {
   padding: 2rem;
   min-width: 90vw;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container .main .summary {
     width: 80vw;
     margin: 0 auto;
     justify-content: center;
   }
 }
-@media (max-width: 800px) and (max-width: 500px) {
+@media (max-width: 790px) and (max-width: 515px) {
   .container .main .summary {
     width: 90%;
     padding: 2%;
     justify-content: center;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container .main .summary {
     min-width: 80vw;
   }
 }
-@media (max-width: 800px) and (max-width: 500px) {
+@media (max-width: 790px) and (max-width: 515px) {
   .container .main .summary {
     min-width: 90%;
   }
@@ -328,15 +383,16 @@ body {
   border-radius: 5px;
   border: 1px solid #1C112F;
   padding: 2rem;
+  width: 21.5%;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container .main .skills {
     width: 80vw;
     margin: 0 auto;
     justify-content: center;
   }
 }
-@media (max-width: 800px) and (max-width: 500px) {
+@media (max-width: 790px) and (max-width: 515px) {
   .container .main .skills {
     width: 90%;
     padding: 2%;
@@ -352,20 +408,27 @@ body {
   border-radius: 5px;
   border: 1px solid #1C112F;
   padding: 2rem;
+  width: 72%;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container .main .experience {
     width: 80vw;
     margin: 0 auto;
     justify-content: center;
   }
 }
-@media (max-width: 800px) and (max-width: 500px) {
+@media (max-width: 790px) and (max-width: 515px) {
   .container .main .experience {
     width: 90%;
     padding: 2%;
     justify-content: center;
   }
+}
+.container .main .experience ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1%;
 }
 .container .main .education {
   display: inline-block;
@@ -378,26 +441,26 @@ body {
   padding: 2rem;
   min-width: 90vw;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container .main .education {
     width: 80vw;
     margin: 0 auto;
     justify-content: center;
   }
 }
-@media (max-width: 800px) and (max-width: 500px) {
+@media (max-width: 790px) and (max-width: 515px) {
   .container .main .education {
     width: 90%;
     padding: 2%;
     justify-content: center;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container .main .education {
     min-width: 80vw;
   }
 }
-@media (max-width: 800px) and (max-width: 500px) {
+@media (max-width: 790px) and (max-width: 515px) {
   .container .main .education {
     min-width: 90%;
   }
@@ -417,7 +480,7 @@ body {
 .container .contact h2 {
   font-size: 3.3rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container .contact h2 {
     font-size: 2rem;
   }
@@ -427,7 +490,7 @@ body {
   font-size: 1.4rem;
   color: #6639B5;
 }
-@media (max-width: 800px) {
+@media (max-width: 790px) {
   .container .contact a {
     font-size: 1.2rem;
   }

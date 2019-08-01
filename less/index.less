@@ -61,6 +61,11 @@ html, body {
 	background-color: @backgroundMain;
 }
 
+// Escaped values
+@mobile: ~"(max-width: 515px)";
+@tablet: ~"(max-width: 790px)";
+
+// Theme Colors
 @backgroundMain: #EEF3F9;
 @theme-color-1: #4071A8;
 @theme-color-2: #D5A33F;
@@ -68,16 +73,46 @@ html, body {
 @theme-color-4: #1C112F;
 @backgroundGradient: linear-gradient(to bottom, #6639B5, #6639B5, #4071A8, #EEF3F9, #EEF3F9);
 
+.basicText {
+	font-size: 1.4rem;
+}
+
 .h2Text {
+	display: inline-block;
+	font-size: 2.3rem;
+	color: @theme-color-4;
+	background-color: @theme-color-4;
+	color: @theme-color-1;
+	padding: .5% 1%;
+	margin: 1% auto;
+	border-radius: 5px;
+	width: auto;
 	font-size: 3.3rem;
 
-	@media (max-width: 800px) {
+	@media @tablet {
 		font-size: 2rem;
 	}
 }
 
 .h3Text {
+	display: inline-block;
+	font-size: 2.3rem;
+	color: @theme-color-2;
+	background-color: @theme-color-4;
+	padding: .5% 1%;
+	border-radius: 5px;
+	width: auto;
 
+	@media @tablet {
+		font-size: 1.8rem;
+	}
+}
+
+.ulbox {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1%;
 }
 
 .box {
@@ -90,12 +125,12 @@ html, body {
 	border: 1px solid @theme-color-4;
 	padding: 2rem;
 
-	@media (max-width: 800px) {
+	@media @tablet {
 		width: 80vw;
 		margin: 0 auto;
 		justify-content: center;
 
-		@media (max-width: 500px) {
+		@media @mobile {
 			width: 90%;
 			padding: 2%;
 			justify-content: center;
@@ -106,7 +141,10 @@ html, body {
 .container {
 	width: 93vw;
 	margin: 0 auto;
-	border: 2px solid red;
+
+	// Formatting Border
+	// border: 2px solid red;
+
 
 	nav {
 		background-color: @theme-color-2;
@@ -118,13 +156,13 @@ html, body {
 		margin: 2rem auto;
 		justify-content: space-between;
 
-		@media (max-width: 800px) {
+		@media @tablet {
 			width: 80vw;
 			margin: 1rem auto;
 			position: relative;
 		
 	
-			@media (max-width: 500px) {
+			@media @mobile {
 				background-color: @backgroundMain;
 				padding: 0;
 				width: 90%;
@@ -140,7 +178,7 @@ html, body {
 			color: @theme-color-3;
 
 
-			@media (max-width: 500px) {
+			@media @mobile {
 				display: flex;
 				margin: 1% auto;
 				width: 100%;
@@ -156,9 +194,9 @@ html, body {
 	}
 
 	header {
-		height: 40vh;
+		height: 30vh;
 		width: 90vw;
-		padding: 5% 5% 10% 10%;
+		padding: 5% 5% 15% 10%;
 		margin: 0 auto;
 		border: 1px solid @theme-color-3;
 		background-image: @backgroundGradient;
@@ -169,14 +207,14 @@ html, body {
 		
 		
 
-		@media (max-width: 800px) {
+		@media @tablet {
 			height: 25vh;
 			width: 80vw;
 			padding: 5% 5% 10% 5%;
 			justify-content: center;
 			align-items: center;
 
-			@media (max-width: 500px) {
+			@media @mobile {
 				width: 90%;
 				padding: 2%;
 			}
@@ -185,7 +223,7 @@ html, body {
 		h1 {
 			font-size: 3.3rem;
 
-			@media (max-width: 800px) {
+			@media @tablet {
 				font-size: 2rem;
 			}
 			
@@ -194,7 +232,7 @@ html, body {
 		h4 {
 			font-size: 1.4rem;
 
-			@media (max-width: 800px) {
+			@media @tablet {
 				font-size: 1.2rem;
 			}
 		}
@@ -206,17 +244,23 @@ html, body {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin: 1% auto;
+		
+		.basicText();
 
 		h2 {
 			.h2Text();
 		}
 
+		h3 {
+			.h3Text();
+		}
+
 		.summary {
 			.box();
 			min-width: 90vw;
-			@media (max-width: 800px){
+			@media @tablet {
 				min-width: 80vw;
-				@media (max-width: 500px){
+				@media @mobile {
 					min-width: 90%;
 				}
 			}
@@ -224,19 +268,26 @@ html, body {
 
 		.skills {
 			.box();
+			width: 21.5%;
 		}
 		
 		.experience {
 			.box();
+			width: 72%;
+
+			ul {
+			.ulbox();
+			}
+
 		}
 
 
 		.education {
 			.box();
 			min-width: 90vw;
-			@media (max-width: 800px){
+			@media @tablet {
 				min-width: 80vw;
-				@media (max-width: 500px){
+				@media @mobile{
 					min-width: 90%;
 				}
 			}
@@ -258,7 +309,11 @@ html, body {
 		margin: 2rem auto;
 
 		h2 {
-			.h2Text();
+			font-size: 3.3rem;
+
+			@media @tablet {
+			font-size: 2rem;
+			}
 		}
 		
 		a{
@@ -266,7 +321,7 @@ html, body {
 			font-size: 1.4rem;
 			color: @theme-color-3;
 
-			@media (max-width: 800px) {
+			@media @tablet {
 				font-size: 1.2rem;
 			}
 		}
