@@ -262,11 +262,12 @@ body {
   padding: 5% 5% 15% 10%;
   margin: 0 auto;
   border: 1px solid #6639B5;
-  background-image: linear-gradient(to bottom, #6639B5, #6639B5, #4071A8, #EEF3F9, #EEF3F9);
+  background-image: linear-gradient(#EEF3F9, #4071A8, #4071A8, #6639B5, #6639B5, #6639B5, #6639B5, #6639B5, #6639B5, #6639B5, #1C112F, #6639B5, #6639B5, #6639B5, #4071A8, #EEF3F9, #EEF3F9);
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   border-color: #EEF3F9;
+  color: #D5A33F;
 }
 @media (max-width: 790px) {
   .container header {
