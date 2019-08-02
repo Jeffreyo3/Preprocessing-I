@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -54,6 +55,287 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: @backgroundMain;
 }
+
+// Escaped values
+@mobile: ~"(max-width: 515px)";
+@tablet: ~"(max-width: 790px)";
+
+// Theme Colors
+@backgroundMain: #EEF3F9;
+@theme-color-1: #4071A8;
+@theme-color-2: #D5A33F;
+@theme-color-3: #6639B5;
+@theme-color-4: #1C112F;
+@backgroundGradient: linear-gradient( #EEF3F9, #4071A8, #4071A8, #6639B5,#6639B5,#6639B5,#6639B5,#6639B5,#6639B5,#6639B5,#1C112F,#6639B5,#6639B5, #6639B5, #4071A8, #EEF3F9, #EEF3F9);
+
+.basicText {
+	font-size: 1.4rem;
+}
+
+.h2Text {
+	display: inline-block;
+	font-size: 2.3rem;
+	color: @theme-color-4;
+	background-color: @theme-color-4;
+	color: @theme-color-1;
+	padding: .5% 1%;
+	margin: 1% auto;
+	border-radius: 5px;
+	width: auto;
+	font-size: 3.3rem;
+
+	@media @tablet {
+		font-size: 2rem;
+	}
+}
+
+.h3Text {
+	display: inline-block;
+	font-size: 2.3rem;
+	color: @theme-color-2;
+	background-color: @theme-color-4;
+	padding: .5% 1%;
+	border-radius: 5px;
+	width: auto;
+
+	@media @tablet {
+		font-size: 1.8rem;
+	}
+}
+
+.ulbox {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1%;
+}
+
+.box {
+	display: inline-block;
+	width: 47.5%;
+	margin: 1% auto;
+	background-color: @theme-color-3;
+	color: @theme-color-2;
+	border-radius: 5px;
+	border: 1px solid @theme-color-4;
+	padding: 2rem;
+
+	@media @tablet {
+		width: 80vw;
+		margin: 0 auto;
+		justify-content: center;
+
+		@media @mobile {
+			width: 90%;
+			padding: 2%;
+			justify-content: center;
+		}
+	}
+}
+
+.container {
+	width: 93vw;
+	margin: 0 auto;
+
+	// Formatting Border
+	// border: 2px solid red;
+
+
+	nav {
+		background-color: @theme-color-2;
+		border-radius: 5px;
+		padding: 2%;
+		font-size: 1.3rem;
+		display: flex;
+		width: 50vw;
+		margin: 2rem auto;
+		justify-content: space-between;
+
+		@media @tablet {
+			width: 80vw;
+			margin: 1rem auto;
+			position: relative;
+		
+	
+			@media @mobile {
+				background-color: @backgroundMain;
+				padding: 0;
+				width: 90%;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin: 1% auto;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			color: @theme-color-3;
+
+
+			@media @mobile {
+				display: flex;
+				margin: 1% auto;
+				width: 100%;
+				justify-content: center;
+				color: @theme-color-2;
+				background-color: @theme-color-3;
+				border: 1px solid @theme-color-4;
+				border-radius: 5px;
+				padding: 2% 4%;
+			}
+		}
+	
+	}
+
+	header {
+		height: 30vh;
+		width: 90vw;
+		padding: 5% 5% 15% 10%;
+		margin: 0 auto;
+		border: 1px solid @theme-color-3;
+		background-image: @backgroundGradient;
+		display: flex;
+		flex-direction: column;
+		border-radius: 5px;
+		border-color: @backgroundMain;
+		color: @theme-color-2;
+		
+		
+
+		@media @tablet {
+			height: 25vh;
+			width: 80vw;
+			padding: 5% 5% 10% 5%;
+			justify-content: center;
+			align-items: center;
+
+			@media @mobile {
+				width: 90%;
+				padding: 2%;
+			}
+		}
+
+		h1 {
+			font-size: 3.3rem;
+
+			@media @tablet {
+				font-size: 2rem;
+			}
+			
+		}
+
+		h4 {
+			font-size: 1.4rem;
+
+			@media @tablet {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	.main{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 1% auto;
+		
+		.basicText();
+
+		h2 {
+			.h2Text();
+		}
+
+		h3 {
+			.h3Text();
+		}
+
+		.summary {
+			.box();
+			min-width: 90vw;
+			@media @tablet {
+				min-width: 80vw;
+				@media @mobile {
+					min-width: 90%;
+				}
+			}
+		}
+
+		.skills {
+			.box();
+			width: 21.5%;
+
+			// div {
+			// 	img{
+			// 	transform: rotate(270deg);
+			// 	display: inline-block;
+			// 	width: 50%;
+			// 	height: auto;
+			// 	}
+			// }
+		}
+		
+		.experience {
+			.box();
+			width: 72%;
+
+			ul {
+			.ulbox();
+			}
+
+		}
+
+
+		.education {
+			.box();
+			min-width: 90vw;
+			@media @tablet {
+				min-width: 80vw;
+				@media @mobile{
+					min-width: 90%;
+				}
+			}
+		}
+
+	}
+
+	.contact {
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+
+		background-color: @theme-color-2;
+		border-radius: 5px;
+		padding: 2%;
+		font-size: 1.3rem;
+		width: 50vw;
+		margin: 2rem auto;
+
+		h2 {
+			font-size: 3.3rem;
+
+			@media @tablet {
+			font-size: 2rem;
+			}
+		}
+		
+		a{
+			text-decoration: none;
+			font-size: 1.4rem;
+			color: @theme-color-3;
+
+			@media @tablet {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+}
+
 
