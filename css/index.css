@@ -196,7 +196,7 @@ body {
 @media (max-width: 790px) {
   .box {
     width: 80vw;
-    margin: 0 auto;
+    margin: 2% auto;
     justify-content: center;
   }
 }
@@ -353,7 +353,7 @@ body {
 @media (max-width: 790px) {
   .container .main .summary {
     width: 80vw;
-    margin: 0 auto;
+    margin: 2% auto;
     justify-content: center;
   }
 }
@@ -388,7 +388,7 @@ body {
 @media (max-width: 790px) {
   .container .main .skills {
     width: 80vw;
-    margin: 0 auto;
+    margin: 2% auto;
     justify-content: center;
   }
 }
@@ -413,7 +413,7 @@ body {
 @media (max-width: 790px) {
   .container .main .experience {
     width: 80vw;
-    margin: 0 auto;
+    margin: 2% auto;
     justify-content: center;
   }
 }
@@ -444,7 +444,7 @@ body {
 @media (max-width: 790px) {
   .container .main .education {
     width: 80vw;
-    margin: 0 auto;
+    margin: 2% auto;
     justify-content: center;
   }
 }
