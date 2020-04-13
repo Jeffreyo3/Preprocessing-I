@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/josefinsans/v15/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhKg.ttf) format('truetype');
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -141,7 +141,7 @@ html,
 body {
   height: 100%;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #EEF3F9;
+  background-color: #3e3245;
 }
 .basicText {
   font-size: 1.4rem;
@@ -149,8 +149,8 @@ body {
 .h2Text {
   display: inline-block;
   font-size: 2.3rem;
-  color: #1C112F;
-  background-color: #1C112F;
+  color: #97d8ec;
+  background-color: #97d8ec;
   color: #4071A8;
   padding: 0.5% 1%;
   margin: 1% auto;
@@ -166,8 +166,8 @@ body {
 .h3Text {
   display: inline-block;
   font-size: 2.3rem;
-  color: #D5A33F;
-  background-color: #1C112F;
+  color: #eff3c6;
+  background-color: #97d8ec;
   padding: 0.5% 1%;
   border-radius: 5px;
   width: auto;
@@ -187,10 +187,10 @@ body {
   display: inline-block;
   width: 47.5%;
   margin: 1% auto;
-  background-color: #6639B5;
-  color: #D5A33F;
+  background-color: #524a79;
+  color: #eff3c6;
   border-radius: 5px;
-  border: 1px solid #1C112F;
+  border: 1px solid #97d8ec;
   padding: 2rem;
 }
 @media (max-width: 790px) {
@@ -212,7 +212,7 @@ body {
   margin: 0 auto;
 }
 .container nav {
-  background-color: #D5A33F;
+  background-color: #eff3c6;
   border-radius: 5px;
   padding: 2%;
   font-size: 1.3rem;
@@ -230,7 +230,7 @@ body {
 }
 @media (max-width: 790px) and (max-width: 515px) {
   .container nav {
-    background-color: #EEF3F9;
+    background-color: #3e3245;
     padding: 0;
     width: 90%;
     flex-direction: column;
@@ -241,7 +241,7 @@ body {
 }
 .container nav a {
   text-decoration: none;
-  color: #6639B5;
+  color: #524a79;
 }
 @media (max-width: 515px) {
   .container nav a {
@@ -249,9 +249,9 @@ body {
     margin: 1% auto;
     width: 100%;
     justify-content: center;
-    color: #D5A33F;
-    background-color: #6639B5;
-    border: 1px solid #1C112F;
+    color: #eff3c6;
+    background-color: #524a79;
+    border: 1px solid #97d8ec;
     border-radius: 5px;
     padding: 2% 4%;
   }
@@ -261,13 +261,13 @@ body {
   width: 90vw;
   padding: 5% 5% 15% 10%;
   margin: 0 auto;
-  border: 1px solid #6639B5;
-  background-image: linear-gradient(#EEF3F9, #4071A8, #4071A8, #6639B5, #6639B5, #6639B5, #6639B5, #6639B5, #6639B5, #6639B5, #1C112F, #6639B5, #6639B5, #6639B5, #4071A8, #EEF3F9, #EEF3F9);
+  border: 1px solid #524a79;
+  background-image: #524a79;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  border-color: #EEF3F9;
-  color: #D5A33F;
+  border-color: #3e3245;
+  color: #eff3c6;
 }
 @media (max-width: 790px) {
   .container header {
@@ -311,8 +311,8 @@ body {
 .container .main h2 {
   display: inline-block;
   font-size: 2.3rem;
-  color: #1C112F;
-  background-color: #1C112F;
+  color: #97d8ec;
+  background-color: #97d8ec;
   color: #4071A8;
   padding: 0.5% 1%;
   margin: 1% auto;
@@ -328,8 +328,8 @@ body {
 .container .main h3 {
   display: inline-block;
   font-size: 2.3rem;
-  color: #D5A33F;
-  background-color: #1C112F;
+  color: #eff3c6;
+  background-color: #97d8ec;
   padding: 0.5% 1%;
   border-radius: 5px;
   width: auto;
@@ -343,10 +343,10 @@ body {
   display: inline-block;
   width: 47.5%;
   margin: 1% auto;
-  background-color: #6639B5;
-  color: #D5A33F;
+  background-color: #524a79;
+  color: #eff3c6;
   border-radius: 5px;
-  border: 1px solid #1C112F;
+  border: 1px solid #97d8ec;
   padding: 2rem;
   min-width: 90vw;
 }
@@ -378,10 +378,10 @@ body {
   display: inline-block;
   width: 47.5%;
   margin: 1% auto;
-  background-color: #6639B5;
-  color: #D5A33F;
+  background-color: #524a79;
+  color: #eff3c6;
   border-radius: 5px;
-  border: 1px solid #1C112F;
+  border: 1px solid #97d8ec;
   padding: 2rem;
   width: 21.5%;
 }
@@ -403,10 +403,10 @@ body {
   display: inline-block;
   width: 47.5%;
   margin: 1% auto;
-  background-color: #6639B5;
-  color: #D5A33F;
+  background-color: #524a79;
+  color: #eff3c6;
   border-radius: 5px;
-  border: 1px solid #1C112F;
+  border: 1px solid #97d8ec;
   padding: 2rem;
   width: 72%;
 }
@@ -434,10 +434,10 @@ body {
   display: inline-block;
   width: 47.5%;
   margin: 1% auto;
-  background-color: #6639B5;
-  color: #D5A33F;
+  background-color: #524a79;
+  color: #eff3c6;
   border-radius: 5px;
-  border: 1px solid #1C112F;
+  border: 1px solid #97d8ec;
   padding: 2rem;
   min-width: 90vw;
 }
@@ -470,7 +470,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #D5A33F;
+  background-color: #eff3c6;
   border-radius: 5px;
   padding: 2%;
   font-size: 1.3rem;
@@ -488,7 +488,7 @@ body {
 .container .contact a {
   text-decoration: none;
   font-size: 1.4rem;
-  color: #6639B5;
+  color: #524a79;
 }
 @media (max-width: 790px) {
   .container .contact a {
