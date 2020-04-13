@@ -126,7 +126,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -140,7 +140,7 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   background-color: #3e3245;
 }
 .basicText {
@@ -151,9 +151,9 @@ body {
   font-size: 2.3rem;
   color: #97d8ec;
   background-color: #97d8ec;
-  color: #4071A8;
-  padding: 0.5% 1%;
-  margin: 1% auto;
+  color: #4071a8;
+  padding: 1.5% 4%;
+  margin-bottom: 1%;
   border-radius: 5px;
   width: auto;
   font-size: 3.3rem;
@@ -211,49 +211,63 @@ body {
   width: 93vw;
   margin: 0 auto;
 }
+@media (max-width: 790px) {
+  .container .header-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 790px) and (max-width: 515px) {
+  .container .header-container {
+    flex-direction: column;
+  }
+}
 .container nav {
   background-color: #eff3c6;
   border-radius: 5px;
   padding: 2%;
   font-size: 1.3rem;
   display: flex;
-  width: 50vw;
+  width: 100%;
   margin: 2rem auto;
   justify-content: space-between;
 }
 @media (max-width: 790px) {
   .container nav {
-    width: 80vw;
-    margin: 1rem auto;
-    position: relative;
-  }
-}
-@media (max-width: 790px) and (max-width: 515px) {
-  .container nav {
     background-color: #3e3245;
     padding: 0;
-    width: 90%;
+    width: 80vw;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 1% auto;
   }
 }
+@media (max-width: 790px) and (max-width: 515px) {
+  .container nav {
+    width: 90%;
+  }
+}
 .container nav a {
   text-decoration: none;
+  background-color: #eff3c6;
   color: #524a79;
+  border-radius: 5px;
 }
-@media (max-width: 515px) {
+@media (max-width: 790px) {
   .container nav a {
-    display: flex;
-    margin: 1% auto;
     width: 100%;
+    display: flex;
     justify-content: center;
+    margin: 1% auto;
+    padding: 2.5%;
+  }
+}
+@media (max-width: 790px) and (max-width: 515px) {
+  .container nav a {
     color: #eff3c6;
     background-color: #524a79;
     border: 1px solid #97d8ec;
     border-radius: 5px;
-    padding: 2% 4%;
   }
 }
 .container header {
@@ -273,7 +287,7 @@ body {
   .container header {
     height: 25vh;
     width: 80vw;
-    padding: 5% 5% 10% 5%;
+    padding: 15% 5% 10% 5%;
     justify-content: center;
     align-items: center;
   }
@@ -313,9 +327,9 @@ body {
   font-size: 2.3rem;
   color: #97d8ec;
   background-color: #97d8ec;
-  color: #4071A8;
-  padding: 0.5% 1%;
-  margin: 1% auto;
+  color: #4071a8;
+  padding: 1.5% 4%;
+  margin-bottom: 1%;
   border-radius: 5px;
   width: auto;
   font-size: 3.3rem;
