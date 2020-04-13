@@ -146,10 +146,14 @@ body {
 .basicText {
   font-size: 1.4rem;
 }
+.flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
 .h2Text {
   display: inline-block;
   font-size: 2.3rem;
-  color: #97d8ec;
   background-color: #97d8ec;
   color: #4071a8;
   padding: 1.5% 4%;
@@ -325,7 +329,6 @@ body {
 .container .main h2 {
   display: inline-block;
   font-size: 2.3rem;
-  color: #97d8ec;
   background-color: #97d8ec;
   color: #4071a8;
   padding: 1.5% 4%;
